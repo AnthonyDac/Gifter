@@ -122,6 +122,7 @@ main .gamesContainer .game pre {
 @media screen and (max-width: 769px) {
   main .gamesContainer {
     margin-top: 5vh;
+    padding-bottom: 5vh;
   }
   main .gamesContainer .game {
     height: 90vh;
@@ -134,6 +135,7 @@ main .gamesContainer .game pre {
 @media screen and (max-width: 426px) {
   main .gamesContainer {
     margin-top: 5vh;
+    padding-bottom: 5vh;
   }
   main .gamesContainer .game {
     height: 80vh;
