@@ -48,7 +48,8 @@ body {
   padding: 20px 10px;
   font-size: 18px;
   height: 10px;
-  color: red;
+  color: #4a4e69;
+  font-weight: bold;
 }
 
 .cardsContainer {
