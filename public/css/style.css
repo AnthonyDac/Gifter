@@ -118,6 +118,51 @@ main .gamesContainer .game pre {
   main .gamesContainer .game h1 {
     font-size: 20px;
   }
+  main .cardsContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .cardsContainer img {
+    width: 600px;
+    height: 100px;
+    object-fit: cover;
+  }
+  main .cardsContainer #valid {
+    width: auto;
+    height: 25px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  main .cardsContainer .pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  main .cardsContainer .pass input {
+    width: 250px;
+    height: 25px;
+    padding: 3px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+  main .cardsContainer .pass button {
+    width: 35px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 10px 10px 0;
+  }
 }
 @media screen and (max-width: 769px) {
   main .gamesContainer {
@@ -130,6 +175,51 @@ main .gamesContainer .game pre {
   }
   main .gamesContainer .game h1 {
     font-size: 20px;
+  }
+  main .cardsContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .cardsContainer img {
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+  }
+  main .cardsContainer #valid {
+    width: auto;
+    height: 25px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  main .cardsContainer .pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  main .cardsContainer .pass input {
+    width: 250px;
+    height: 25px;
+    padding: 3px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+  main .cardsContainer .pass button {
+    width: 35px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 10px 10px 0;
   }
 }
 @media screen and (max-width: 426px) {
@@ -148,6 +238,51 @@ main .gamesContainer .game pre {
   main .gamesContainer .game pre {
     overflow-x: scroll;
     font-size: 15px;
+  }
+  main .cardsContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .cardsContainer img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+  }
+  main .cardsContainer #valid {
+    width: auto;
+    height: 25px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  main .cardsContainer .pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  main .cardsContainer .pass input {
+    width: 150px;
+    height: 25px;
+    padding: 3px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+  main .cardsContainer .pass button {
+    width: 35px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 10px 10px 0;
   }
 }
 
