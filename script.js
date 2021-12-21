@@ -1,1 +1,43 @@
-var e="bd",t="zH",a="vo",l="dz",n="Sm",o="dM",s=48,d=23,c=56,input=document.getElementById("password"),icon=document.getElementById("show"),validator=document.getElementById("valid"),showing=!1,connected=!1;function shower(){showing?(input.type="password",showing=!1,icon.classList.remove("fa-eye-slash"),icon.classList.add("fa-eye")):(input.type="text",showing=!0,icon.classList.remove("fa-eye"),icon.classList.add("fa-eye-slash"))}validator.addEventListener("click",(function(e){input.value==e+s+t&&(window.location.href="adrien.html",localStorage.setItem("connected-as-adrien",!0)),input.value==a+d+l&&(window.location.href="valentin.html",localStorage.setItem("connected-as-valentin",!0)),input.value==n+c+o&&(window.location.href="lili.html",localStorage.setItem("connected-as-lili",!0))}));
+var afirst = "bd";
+var athird = "zH";
+var vfirst = "vo";
+var vthird = "dz";
+var lfirst = "Sm";
+var lthird = "dM";
+var lsecond = 48;
+var vsecond = 23;
+var asecond = 56;
+var input = document.getElementById("password");
+var icon = document.getElementById("show");
+var validator = document.getElementById("valid");
+var showing = false;
+var connected = false;
+
+function shower() {
+    if(showing) {
+        input.type = "password";
+        showing = false;
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+    else {
+        input.type = "text";
+        showing = true;
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    }
+}
+validator.addEventListener('click', function(e) {
+    if(input.value == afirst + asecond + athird) {
+        window.location.href = "adrien.html";
+        localStorage.setItem("connected-as-adrien", true);
+    }
+    if(input.value == vfirst + vsecond + vthird) {
+        window.location.href = "valentin.html";
+        localStorage.setItem("connected-as-valentin", true);
+    }
+    if(input.value == lfirst + lsecond + lthird) {
+        window.location.href = "lili.html";
+        localStorage.setItem("connected-as-lili", true);
+    }
+});
