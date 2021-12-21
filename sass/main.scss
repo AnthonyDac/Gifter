@@ -19,39 +19,51 @@ body {
   height: 100vh;
   background: #660708;
 }
-.gamesContainer {
-  width: 100%;
-  height: 100%;
+main {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 5%;
-  font-family: 'Montserrat';
-  .game {
-    width: 15%;
-    background: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  .gamesContainer {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-    h1 {
-      padding: 15px 10px;
-      height: 50px;
-    }
-    p {
-      padding: 0 10px;
-      height: 40%;
-      font-size: 14px;
-    }
-    pre {
-      padding: 20px 10px;
-      font-size: 18px;
-      height: 10px;
-      color: #4a4e69;
-      font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    font-family: 'Montserrat';
+    flex-wrap: wrap;
+    .game {
+      overflow: hidden;
+      width: 18%;
+      height: 80vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 15px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      h1 {
+        padding: 15px 10px;
+        height: 50px;
+      }
+      p {
+        padding: 0 10px;
+        height: 40%;
+        font-size: 14px;
+        overflow-y: scroll;
+      }
+      pre {
+        padding: 20px 10px;
+        font-size: 18px;
+        height: 10px;
+        color: #4a4e69;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -97,6 +109,53 @@ body {
       align-items: center;
       border: none;
       border-radius: 0 10px 10px 0;
+    }
+  }
+}
+@media screen and (max-width : 1025px) {
+  main {
+    .gamesContainer {
+
+      .game {
+        height: 90vh;
+        width: 25%;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 769px) {
+  main {
+    .gamesContainer {
+      margin-top: 5vh;
+      .game {
+        height: 90vh;
+        width: 45%;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 426px) {
+  main {
+    .gamesContainer {
+      margin-top: 5vh;
+      .game {
+        height: 80vh;
+        width: 80%;
+        h1 {
+          font-size: 20px;
+          height: 15px;
+        }
+        pre {
+          overflow-x: scroll;
+          font-size: 15px;
+        }
+      }
     }
   }
 }

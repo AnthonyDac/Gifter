@@ -15,36 +15,48 @@ body {
   background: #660708;
 }
 
-.gamesContainer {
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+main .gamesContainer {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
   font-family: "Montserrat";
+  flex-wrap: wrap;
 }
-.gamesContainer .game {
-  width: 15%;
+main .gamesContainer .game {
+  overflow: hidden;
+  width: 18%;
+  height: 80vh;
   background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 15px;
 }
-.gamesContainer .game img {
+main .gamesContainer .game img {
   width: 100%;
   object-fit: cover;
 }
-.gamesContainer .game h1 {
+main .gamesContainer .game h1 {
   padding: 15px 10px;
   height: 50px;
 }
-.gamesContainer .game p {
+main .gamesContainer .game p {
   padding: 0 10px;
   height: 40%;
   font-size: 14px;
+  overflow-y: scroll;
 }
-.gamesContainer .game pre {
+main .gamesContainer .game pre {
   padding: 20px 10px;
   font-size: 18px;
   height: 10px;
@@ -96,6 +108,45 @@ body {
   align-items: center;
   border: none;
   border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 1025px) {
+  main .gamesContainer .game {
+    height: 90vh;
+    width: 25%;
+  }
+  main .gamesContainer .game h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  main .gamesContainer {
+    margin-top: 5vh;
+  }
+  main .gamesContainer .game {
+    height: 90vh;
+    width: 45%;
+  }
+  main .gamesContainer .game h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  main .gamesContainer {
+    margin-top: 5vh;
+  }
+  main .gamesContainer .game {
+    height: 80vh;
+    width: 80%;
+  }
+  main .gamesContainer .game h1 {
+    font-size: 20px;
+    height: 15px;
+  }
+  main .gamesContainer .game pre {
+    overflow-x: scroll;
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
